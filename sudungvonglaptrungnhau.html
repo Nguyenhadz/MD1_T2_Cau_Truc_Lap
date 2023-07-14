@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let hapro, i, j;
+  hapro = "<table border='1' width='100' cellSpacing='0' cellPadding='3'>";
+  for (i = 1; i <= 10; i++){
+      hapro = hapro + "<tr>"
+      for (j =1; j <=10; j++){
+          hapro = hapro + "<td>" + i*j + "</td>";
+      }
+      hapro = hapro + "</tr>";
+  }
+  hapro = hapro + "</table>";
+  document.write(hapro)
+</script>
+
+
+
+
+</body>
+</html>
