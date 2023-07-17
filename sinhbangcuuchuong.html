@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table {
+            border: 1px solid black;
+        }
+        tr, td {
+            border: 1px solid black;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+<script>
+    let i, j, value, stringI, stringJ;
+    value = '<table>';
+    for ( j = 1; j<10 ; j++){
+        stringJ = '' + j;
+        value = value + '<tr>';
+        for ( i =2; i<10; i++){
+            stringI = '' + i;
+            value = value + '<td>' + stringI + '*' + stringJ + '=' + i*j + '</td>';
+        }
+
+        value += '</tr>';
+    }
+    value += '</table>';
+    document.write(value);
+    
+</script>
+</body>
+
+</html>
