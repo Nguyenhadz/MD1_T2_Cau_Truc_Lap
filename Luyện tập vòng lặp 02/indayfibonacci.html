@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let count = +prompt('Bạn muốn dãy Fibonacci hiển thị bao nhiêu số:')
+  let a = 0;
+  let b = 1;
+  document.write(a + '<br>');
+  document.write(b + '<br>');
+  for ( let x = 0; x < count -2; x++){
+    let c = a + b;
+    a = b;
+    b = c;
+    document.write(c + '<br>');
+  }
+</script>
+
+</body>
+</html>

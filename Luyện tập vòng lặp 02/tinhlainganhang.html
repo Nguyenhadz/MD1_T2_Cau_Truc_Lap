@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let money = +prompt('Nhập số tiền muốn gửi:');
+  let b = +prompt('Nhập số tháng muốn gửi:');
+  alert('Lãi suất ngân hàng là 0,1');
+  let c = 0.1;
+  let value = 0;
+  for ( let i = 1; i <= b; i++){
+    value = value + money*c;
+    money+= money*c;
+  }
+  document.write('Số tiền lãi sau '+ b + ' tháng gửi là: ' + value);
+  document.write('<br>');
+  document.write('Tổng số tiền sau ' + b + ' tháng gửi là: ' +money + 'VNĐ');
+
+
+</script>
+
+</body>
+</html>

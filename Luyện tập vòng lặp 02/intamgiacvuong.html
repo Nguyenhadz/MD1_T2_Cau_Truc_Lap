@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt('Nhập chiều cao của tam giác:');
+    for ( let i=1; i<= a; i++){
+        for (let j = 1; j<=i; j++){
+            document.write('*');
+        }
+        document.write('<br>')
+    }
+</script>
+
+
+<script>
+    let a = +prompt('Nhập chiều cao của tam giác:');
+    for ( let i = a; i >=1; i--){
+        for ( let j = i; j>=1; j--){
+            document.write('*');
+        }
+        document.write('<br>');
+    }
+</script>
+
+
+<script>
+    let a = +prompt('Nhập chiều cao của tam giác:');
+    let value = '<table>' + '<tr>';
+    for (let i =1; i<=a; i++){
+        for (let j = 1; j<=(a-i); j++){
+            value = value + '<td>' +'</td>';
+        }
+        for ( let z = a-i+1; z <= a; z++){
+            value = value + '<td>' + '*' + '</td>';
+        }
+        value = value + '</tr>' +'<tr>';
+    }
+    value = value + '</tr>';
+    document.write(value);
+</script>
+
+
+<script>
+    let a = +prompt('Nhập chiều cao của tam giác:');
+    let value = '<table>' + '<tr>';
+    for (let i =a; i>= 1; i--){
+        for (let j = 1; j<=(a-i); j++){
+            value = value + '<td>' +'</td>';
+        }
+        for ( let z = a-i+1; z <= a; z++){
+            value = value + '<td>' + '*' + '</td>';
+        }
+        value = value + '</tr>' +'<tr>';
+    }
+    value = value + '</tr>';
+    document.write(value);
+</script>
+
+
+</body>
+</html>
